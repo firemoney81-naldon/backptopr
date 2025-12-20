@@ -1,23 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  <title>이사 업체에 속지 마라 당신만 모르는 전국 포장이사 최저가 사이트 모음</title>
+
+  
+  
+  <style>
+        :root {
+            --primary-bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --accent-color: #6c5ce7;
+            --text-main: #2d3436;
+            --text-sub: #636e72;
+            --pastel-1: #e1f5fe;
+            --pastel-2: #fff9db;
+            --pastel-3: #f3e5f5;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        header p { opacity: 0.9; font-weight: 300; }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .category-section {
+            margin-bottom: 4rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(108, 92, 231, 0.15);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card .tag {
+            font-size: 0.75rem;
+            background: var(--pastel-1);
+            color: #0288d1;
+            padding: 3px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card .title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #1e272e;
+        }
+
+        .card .desc {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            margin-bottom: 15px;
+        }
+
+        .card .btn {
+            margin-top: auto;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            text-align: right;
+        }
+
+        footer {
+            background: #2d3436;
+            color: #dfe6e9;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>이사 업체에 속지 마라 당신만 모르는 전국 포장이사 최저가 사이트 모음</h1>
+    <p>손 없는 날 확인부터 비용 절감까지, 당신의 새로운 시작을 응원합니다.</p>
+</header>
+
+<div class="container" id="content-area">
+    </div>
+
+<footer>
+    <p>&copy; 2026 Moving Smart Guide. All rights reserved.</p>
+    <p>본 페이지는 이사 정보 제공을 목적으로 하며, 각 링크는 상세 페이지로 연결됩니다.</p>
+</footer>
+
+<script>
+    const data = [
+        { name: "손없는날 이사비용", link: "https://movingakinda.withusgoat.com", desc: "귀신이 쉬는 날, 내 지갑도 쉴 수 있을까? 프리미엄 견적 확인하기" },
+        { name: "손없는날 이사비용차이", link: "https://movingakindb.withusgoat.com", desc: "왜 평일보다 비쌀까? 합리적인 가격 차이를 분석해 드립니다." },
+        { name: "손없는날이사", link: "https://movingakindc.withusgoat.com", desc: "길일 중의 길일! 액운을 피하는 현명한 이사 날짜 선택법" },
+        { name: "손없는날 1월", link: "https://movingakindd.withusgoat.com", desc: "새해 첫 출발, 길운이 깃든 1월의 이삿날을 공개합니다." },
+        { name: "손없는날 2월", link: "https://movingakinde.withusgoat.com", desc: "봄을 기다리는 2월, 포근한 새집 이사를 위한 최적의 날짜" },
+        { name: "손없는날 3월", link: "https://movingakindf.withusgoat.com", desc: "이사 성수기 3월, 미리 예약하지 않으면 늦는 황금 보물날" },
+        { name: "손없는날 4월", link: "https://movingakindg.withusgoat.com", desc: "꽃피는 4월의 이사, 따스한 기운이 넘치는 날짜를 확인하세요." },
+        { name: "손없는날 5월", link: "https://movingakindh.withusgoat.com", desc: "가정의 달 5월, 온 가족이 행복해지는 이사 택일 가이드" },
+        { name: "손없는날 6월", link: "https://movingakindi.withusgoat.com", desc: "초여름의 이사, 쾌적하고 깔끔하게 이동할 수 있는 길일" },
+        { name: "손없는날 7월", link: "https://movingakindj.withusgoat.com", desc: "무더위를 피해 운수 대통하는 7월의 이사 명당 날짜" },
+        { name: "손없는날 8월", link: "https://movingakindk.withusgoat.com", desc: "휴가철 이사 계획 중이라면? 8월의 길일을 놓치지 마세요." },
+        { name: "손없는날 9월", link: "https://movingakindl.withusgoat.com", desc: "결실의 계절 9월, 풍요로운 새집 살이를 위한 최고의 선택" },
+        { name: "손없는날 10월", link: "https://movingakindm.withusgoat.com", desc: "이사하기 가장 좋은 10월, 경쟁이 치열한 손 없는 날 정보" },
+        { name: "손없는날 11월", link: "https://movingakindn.withusgoat.com", desc: "찬바람 불기 전, 마음까지 따뜻해지는 11월의 이사 길일" },
+        { name: "손없는날 12월", link: "https://movingakindo.withusgoat.com", desc: "한 해를 마무리하는 12월, 액운을 막아주는 마지막 이삿날" },
+        { name: "손없는날 달력", link: "https://movingakindp.withusgoat.com", desc: "2025년 전체 일정을 한눈에! 나만의 이사 캘린더 만들기" },
+        { name: "1월이사 손없는날", link: "https://movingakindq.withusgoat.com", desc: "신년 계획의 시작은 이사부터! 1월의 특별한 택일법" },
+        { name: "2월이사 손없는날", link: "https://movingakindr.withusgoat.com", desc: "구정 전후 이사 계획? 2월의 행운을 잡는 날짜 리스트" },
+        { name: "3월이사 손없는날", link: "https://movingakinds.withusgoat.com", desc: "학기 시작과 맞물린 3월, 이사 전쟁에서 승리하는 날짜" },
+        { name: "4월이사 손없는날", link: "https://movingakindt.withusgoat.com", desc: "봄바람 타고 가는 기분 좋은 이사, 4월의 손 없는 날" },
+        { name: "5월이사 손없는날", link: "https://movingakindu.withusgoat.com", desc: "축제 같은 이사 날짜, 5월의 길일을 지금 바로 확인하세요." },
+        { name: "6월이사 손없는날", link: "https://movingakindv.withusgoat.com", desc: "본격적인 여름 전, 가장 운 좋은 날을 골라 드립니다." },
+        { name: "7월이사 손없는날", link: "https://movingakindw.withusgoat.com", desc: "장마철도 두렵지 않은 기운 좋은 7월 이삿날 가이드" },
+        { name: "8월이사 손없는날", link: "https://movingakindx.withusgoat.com", desc: "태양의 기운을 담은 8월, 이사하면 대박 나는 날짜는?" },
+        { name: "9월이사 손없는날", link: "https://movingakindy.withusgoat.com", desc: "가을의 시작을 알리는 9월, 이사의 정석을 만나는 길일" },
+        { name: "10월이사 손없는날", link: "https://movingakindz.withusgoat.com", desc: "완벽한 날씨와 완벽한 날짜의 만남, 10월의 이사 대길일" },
+        { name: "11월이사 손없는날", link: "https://movingbkinda.withusgoat.com", desc: "초겨울의 시작, 액운 없이 평온한 이사를 약속합니다." },
+        { name: "12월이사 손없는날", link: "https://movingbkindb.withusgoat.com", desc: "올해의 마지막 이사 기회, 12월의 복을 부르는 날짜" },
+        { name: "포장이사", link: "https://movingbkindo.withusgoat.com", desc: "손 하나 까딱 안 하고 끝내는 마법 같은 포장이사의 세계" },
+        { name: "이사짐센터", link: "https://movingbkindp.withusgoat.com", desc: "믿고 맡길 수 있는 우리 동네 숨은 고수 센터 찾기" },
+        { name: "보관이사", link: "https://movingbkindq.withusgoat.com", desc: "입주 날짜가 안 맞을 때? 짐 걱정 없는 안전 보관 솔루션" },
+        { name: "포장이사비용", link: "https://movingbkindr.withusgoat.com", desc: "거품은 빼고 만족은 더했다! 투명한 포장 이사 단가 확인" },
+        { name: "이사견적", link: "https://movingbkinds.withusgoat.com", desc: "클릭 한 번으로 끝내는 초스피드 스마트 이사 견적 서비스" },
+        { name: "이삿짐보관비용", link: "https://movingbkindt.withusgoat.com", desc: "하루를 맡겨도 안전하게! 합리적인 보관료 계산법" },
+        { name: "반포장이사", link: "https://movingbkindu.withusgoat.com", desc: "비용은 줄이고 짐 정리는 내 맘대로! 실속파를 위한 선택" },
+        { name: "이사비용", link: "https://movingbkindv.withusgoat.com", desc: "이사 비용이 궁금하세요? 전국 평균 시세와 절약 꿀팁" },
+        { name: "이사업체", link: "https://movingbkindw.withusgoat.com", desc: "검증된 베테랑들만 모였다! 실패 없는 이사업체 선정 기준" },
+        { name: "보관이사비용", link: "https://movingbkindx.withusgoat.com", desc: "이삿짐 보관과 이사를 한 번에! 가성비 최고 패키지 안내" },
+        { name: "포장이사견적비교", link: "https://movingbkindy.withusgoat.com", desc: "여러 곳 물어볼 필요 없이 여기서 한 번에 비교하세요." },
+        { name: "이삿짐보관", link: "https://movingckinda.withusgoat.com", desc: "내 소중한 물건을 위한 최적의 습도와 온도가 유지되는 창고" },
+        { name: "이사준비체크리스트", link: "https://movingckindb.withusgoat.com", desc: "하나라도 놓치면 낭패! 전문가가 작성한 꼼꼼 체크리스트" },
+        { name: "원룸이사비용", link: "https://movingckindc.withusgoat.com", desc: "1인 가구 맞춤형! 소형 이사를 위한 가장 저렴한 견적" },
+        { name: "이사체크리스트", link: "https://movingckinde.withusgoat.com", desc: "이사 전후 꼭 챙겨야 할 필수 항목 50가지 완벽 정리" },
+        { name: "이사비용견적", link: "https://movingckindg.withusgoat.com", desc: "내 짐 양에 딱 맞는 맞춤형 견적을 지금 바로 산출해 보세요." },
+        { name: "이사짐센터비용", link: "https://movingckindh.withusgoat.com", desc: "업체마다 다른 견적, 바가지 안 쓰는 법 대공개" },
+        { name: "이사업체순위", link: "https://movingckindj.withusgoat.com", desc: "실제 이용자가 뽑은 대한민국 이사업체 만족도 랭킹" },
+        { name: "이사준비", link: "https://movingckindk.withusgoat.com", desc: "이사 30일 전부터 당일까지, 시간대별 행동 강령" },
+        { name: "부산이사업체", link: "https://movingckinds.withusgoat.com", desc: "부산 전 지역 어디든! 부산 고수들이 선보이는 이사 기술" },
+        { name: "용달이사비용", link: "https://movingckindt.withusgoat.com", desc: "트럭 한 대면 충분해! 용달 이사의 가장 저렴한 활용법" },
+        { name: "이사날짜", link: "https://movingckindu.withusgoat.com", desc: "운명을 바꾸는 이사 날짜 선택, 당신에게 맞는 날은?" },
+        { name: "포장이사가격", link: "https://movingdkindb.withusgoat.com", desc: "프리미엄 서비스지만 가격은 담백하게! 가격대별 분석" },
+        { name: "이사시해야할일", link: "https://movingdkindc.withusgoat.com", desc: "공과금 정산부터 전입신고까지, 이사 당일 미션 클리어" },
+        { name: "보관이사전문업체", link: "https://movingdkinde.withusgoat.com", desc: "짐 보관의 정석! 24시간 보안 시스템이 가동되는 업체" },
+        { name: "반포장이사비용", link: "https://movingdkindh.withusgoat.com", desc: "포장은 업체가, 정리는 내가! 가성비 끝판왕 가격 안내" },
+        { name: "손있는날", link: "https://movingdkindl.withusgoat.com", desc: "피해야 할 날? 아니면 오히려 기회? 손 있는 날의 진실" },
+        { name: "소형이사", link: "https://movingdkinds.withusgoat.com", desc: "짐이 적어도 정성은 가득하게! 소형 가구를 위한 맞춤 이사" },
+        { name: "이사사다리차비용", link: "https://movingdkindu.withusgoat.com", desc: "고층 이사의 필수품, 사다리차 층수별 이용 요금표" },
+        { name: "수원포장이사", link: "https://movingekinde.withusgoat.com", desc: "수원 시민들이 신뢰하는 1위 포장이사 서비스" },
+        { name: "대전이사업체", link: "https://movingekindh.withusgoat.com", desc: "중부권 이사의 중심, 대전 최고의 이사 팀을 만나보세요." },
+        { name: "투룸이사비용", link: "https://movingekindi.withusgoat.com", desc: "신혼부부 및 투룸 거주자를 위한 최적의 짐 분량 계산법" }
+    ];
+
+    const categories = [
+        "📅 2025 손 없는 날 완벽 가이드",
+        "💰 실속 있는 이사 비용 분석",
+        "🚚 믿을 수 있는 지역별 업체 정보",
+        "📦 보관 이사 & 소형 이사 전문",
+        "📝 놓치면 후회하는 이사 체크리스트",
+        "🌟 프리미엄 포장 이사 서비스",
+        "🔍 똑똑한 이사 견적 비교"
+    ];
+
+    function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
+    const contentArea = document.getElementById('content-area');
+    const shuffledCategories = shuffle([...categories]);
+    const shuffledData = shuffle([...data]);
+
+    let dataIndex = 0;
+
+    shuffledCategories.forEach(cat => {
+        const section = document.createElement('section');
+        section.className = 'category-section';
+        
+        const title = document.createElement('h2');
+        title.className = 'category-title';
+        title.innerText = cat;
+        section.appendChild(title);
+
+        const grid = document.createElement('div');
+        grid.className = 'grid-container';
+
+        // 각 카테고리당 6~9개 사이 무작위 배치
+        const count = Math.floor(Math.random() * 4) + 6;
+        for(let i=0; i<count; i++) {
+            if(dataIndex >= shuffledData.length) break;
+            
+            const item = shuffledData[dataIndex];
+            const card = document.createElement('article');
+            card.className = 'card';
+            card.innerHTML = `
+                <a href="${item.link}" target="_blank" title="${item.name} 상세정보 보기">
+                    <span class="tag">#추천정보</span>
+                    <div class="title">${item.name}</div>
+                    <div class="desc">${item.desc}</div>
+                    <div class="btn">상세보기 →</div>
+                </a>
+            `;
+            grid.appendChild(card);
+            dataIndex++;
+        }
+        
+        section.appendChild(grid);
+        contentArea.appendChild(section);
+    });
+
+</script>
+
+</body>
 </html>
